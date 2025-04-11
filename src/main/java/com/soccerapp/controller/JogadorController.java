@@ -70,7 +70,9 @@ public class JogadorController {
         }
 
         Jogador jogador = jogadorOptional.get();
+
         jogador.setNome(dto.nome());
+        jogador.setNumeroColete(dto.numeroColete());
         jogador.setGols(dto.gols());
         jogador.setAssistencias(dto.assistencias());
         jogador.setCartoesAmarelos(dto.cartoesAmarelos());

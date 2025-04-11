@@ -20,6 +20,9 @@ public class Jogador {
     @Column(nullable = false, length = 100)
     private String nome;
 
+    @Column(name = "numero_colete")
+    private Integer numeroColete;
+
     private int gols = 0;
     private int assistencias = 0;
     private int cartoesAmarelos = 0;
