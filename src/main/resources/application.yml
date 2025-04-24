@@ -1,2 +1,14 @@
 server:
   port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://turntable.proxy.rlwy.net:34068/railway
+    username: postgres
+    password: PxXrjohsXhezCosDpCmXCMpUKuHOPSwa
+    driver-class-name: org.postgresql.Driver
+
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:my-secret-key}

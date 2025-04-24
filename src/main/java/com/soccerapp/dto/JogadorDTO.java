@@ -11,6 +11,12 @@ public record JogadorDTO(
         @NotBlank(message = "O nome é obrigatório")
         String nome,
 
+        Integer numeroColete,
+
+        Integer idade,
+
+        String torcida,
+
         @Min(value = 0, message = "Gols não podem ser negativos")
         int gols,
 

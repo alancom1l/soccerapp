@@ -14,6 +14,9 @@ public class JogadorMapper {
         return new JogadorDTO(
                 jogador.getId(),
                 jogador.getNome(),
+                jogador.getNumeroColete(),
+                jogador.getIdade(),
+                jogador.getTorcida(),
                 jogador.getGols(),
                 jogador.getAssistencias(),
                 jogador.getCartoesAmarelos(),
@@ -25,6 +28,9 @@ public class JogadorMapper {
         return new Jogador(
                 dto.id(),
                 dto.nome(),
+                dto.numeroColete(),
+                dto.idade(),
+                dto.torcida(),
                 dto.gols(),
                 dto.assistencias(),
                 dto.cartoesAmarelos(),
