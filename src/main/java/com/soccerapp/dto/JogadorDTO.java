@@ -13,6 +13,10 @@ public record JogadorDTO(
 
         Integer numeroColete,
 
+        Integer idade,
+
+        String torcida,
+
         @Min(value = 0, message = "Gols não podem ser negativos")
         int gols,
 

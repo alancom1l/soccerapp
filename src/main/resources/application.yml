@@ -8,8 +8,7 @@ spring:
     password: PxXrjohsXhezCosDpCmXCMpUKuHOPSwa
     driver-class-name: org.postgresql.Driver
 
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update  # Atualiza tabelas automaticamente
-    show-sql: true  # Exibe SQL no console
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET:my-secret-key}

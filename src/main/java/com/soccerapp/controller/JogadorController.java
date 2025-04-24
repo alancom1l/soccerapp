@@ -73,6 +73,8 @@ public class JogadorController {
 
         jogador.setNome(dto.nome());
         jogador.setNumeroColete(dto.numeroColete());
+        jogador.setIdade(dto.idade());
+        jogador.setTorcida(dto.torcida());
         jogador.setGols(dto.gols());
         jogador.setAssistencias(dto.assistencias());
         jogador.setCartoesAmarelos(dto.cartoesAmarelos());

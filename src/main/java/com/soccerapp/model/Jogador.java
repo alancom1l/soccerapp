@@ -23,6 +23,8 @@ public class Jogador {
     @Column(name = "numero_colete")
     private Integer numeroColete;
 
+    private int idade;
+    private String torcida;
     private int gols = 0;
     private int assistencias = 0;
     private int cartoesAmarelos = 0;
