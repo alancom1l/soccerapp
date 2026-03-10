@@ -72,13 +72,14 @@ public class JogadorController {
         Jogador jogador = jogadorOptional.get();
 
         jogador.setNome(dto.nome());
+        jogador.setApelido(dto.apelido());
+        jogador.setDataNascimento(dto.dataNascimento());
+        jogador.setTimeTorce(dto.timeTorce());
         jogador.setNumeroColete(dto.numeroColete());
-        jogador.setIdade(dto.idade());
-        jogador.setTorcida(dto.torcida());
-        jogador.setGols(dto.gols());
-        jogador.setAssistencias(dto.assistencias());
-        jogador.setCartoesAmarelos(dto.cartoesAmarelos());
-        jogador.setCartoesVermelhos(dto.cartoesVermelhos());
+        jogador.setPosicaoPreferida(dto.posicaoPreferida());
+        jogador.setFotoUrl(dto.fotoUrl());
+        jogador.setAtivo(dto.ativo());
+        jogador.setDataEntradaAssociacao(dto.dataEntradaAssociacao());
 
         jogador = jogadorService.salvar(jogador);
 

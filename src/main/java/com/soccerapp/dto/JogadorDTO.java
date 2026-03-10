@@ -1,8 +1,8 @@
 package com.soccerapp.dto;
 
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 public record JogadorDTO(
@@ -11,21 +11,19 @@ public record JogadorDTO(
         @NotBlank(message = "O nome é obrigatório")
         String nome,
 
+        String apelido,
+
+        LocalDate dataNascimento,
+
+        String timeTorce,
+
         Integer numeroColete,
 
-        Integer idade,
+        String posicaoPreferida,
 
-        String torcida,
+        String fotoUrl,
 
-        @Min(value = 0, message = "Gols não podem ser negativos")
-        int gols,
+        Boolean ativo,
 
-        @Min(value = 0, message = "Assistências não podem ser negativas")
-        int assistencias,
-
-        @Min(value = 0, message = "Cartões amarelos não podem ser negativos")
-        int cartoesAmarelos,
-
-        @Min(value = 0, message = "Cartões vermelhos não podem ser negativos")
-        int cartoesVermelhos
+        LocalDate dataEntradaAssociacao
 ) {}

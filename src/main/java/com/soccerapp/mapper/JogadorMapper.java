@@ -14,13 +14,14 @@ public class JogadorMapper {
         return new JogadorDTO(
                 jogador.getId(),
                 jogador.getNome(),
+                jogador.getApelido(),
+                jogador.getDataNascimento(),
+                jogador.getTimeTorce(),
                 jogador.getNumeroColete(),
-                jogador.getIdade(),
-                jogador.getTorcida(),
-                jogador.getGols(),
-                jogador.getAssistencias(),
-                jogador.getCartoesAmarelos(),
-                jogador.getCartoesVermelhos()
+                jogador.getPosicaoPreferida(),
+                jogador.getFotoUrl(),
+                jogador.getAtivo(),
+                jogador.getDataEntradaAssociacao()
         );
     }
 
@@ -28,13 +29,14 @@ public class JogadorMapper {
         return new Jogador(
                 dto.id(),
                 dto.nome(),
+                dto.apelido(),
+                dto.dataNascimento(),
+                dto.timeTorce(),
                 dto.numeroColete(),
-                dto.idade(),
-                dto.torcida(),
-                dto.gols(),
-                dto.assistencias(),
-                dto.cartoesAmarelos(),
-                dto.cartoesVermelhos()
+                dto.posicaoPreferida(),
+                dto.fotoUrl(),
+                dto.ativo(),
+                dto.dataEntradaAssociacao()
         );
     }
 
